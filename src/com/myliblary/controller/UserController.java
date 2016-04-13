@@ -30,7 +30,7 @@ public class UserController {
             return model;
         }
  
-      @RequestMapping(value="/")
+      @RequestMapping(value="/addUser")
         public ModelAndView add() {
             ModelAndView model = new ModelAndView("UserAdd");
            User item=new User();
