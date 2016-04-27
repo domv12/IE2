@@ -1,0 +1,75 @@
+
+.fa-youtube
+{
+	 margin: auto; display: block;
+	font-size: xx-large;
+	color: white;
+	margin-top: 10px;
+
+}
+.fa-facebook
+{ 
+	font-size: xx-large;
+	color: white;
+	margin-top: 10px;
+
+}
+.fa-twitter
+{
+	font-size: xx-large;
+	color: white;
+	margin-top: 10px;
+}
+.center
+{
+	width: 50%;
+    margin: 0 auto;
+    background-color: #3095d3;
+ 
+}
+.twitter
+{
+	float: left; 
+	width: 33%;
+	height: 55px;
+	background-color: #746a75;
+	text-align:center;
+}
+.twitter:hover
+{
+		background-color: #3095d3;
+}
+
+.fb
+{
+	
+	float: left; 
+	width: 33%;
+	height: 55px;
+	background-color: #c0c0c0;
+	text-align:center;
+
+}
+.fb:hover
+{
+	background-color: #4668b3;
+}
+
+.yt
+{
+	float: left; 
+	width: 33%;
+	height: 55px;
+	background-color: #c0c0c0;
+	
+	text-align:center;
+}
+.yt:hover
+{
+	background-color: #d94348;
+}
+.test
+{
+	font-size: xx-large;
+	background-color: #d94348;
+}
