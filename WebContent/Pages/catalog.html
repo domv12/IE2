@@ -1,5 +1,10 @@
 <div class="jumbotron text-center">
 	<h1>Catalog Page</h1>
-	
-	<p>{{ message }}</p>
+	<ul>
+    <li ng-repeat="x in myData">
+    {{ x.title + ', ' + x.author }}
+    </li>
+    </ul>
+
+
 </div>

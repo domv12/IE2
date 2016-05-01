@@ -27,6 +27,7 @@ public class UserController {
       @ResponseBody
         public List<User> list() {
             List<User> itemList = userDao.list();
+            System.out.println("elo!");
            // ModelAndView model = new ModelAndView("UserList");
            // model.addObject("itemList", itemList);
             //return model;

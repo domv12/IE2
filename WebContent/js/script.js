@@ -36,12 +36,21 @@
 		$scope.message = 'Everyone come and see how good I look!';
 	});
 
-	scotchApp.controller('catalogController', function($scope) {
+	scotchApp.controller('catalogController', function($scope,$http) {
 		$scope.message = 'I am an catalog page.';
+		
+		 $http.get("bookList").then(function(response) {
+		        $scope.myData = response.data;
+		    });
+		
+		
 	});
 	
 	scotchApp.controller('aboutController', function($scope) {
 		$scope.message = 'Look! I am an about page.';
+		
+		
+		
 	});
 
 	scotchApp.controller('contactController', function($scope) {

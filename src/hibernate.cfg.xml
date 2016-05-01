@@ -30,7 +30,8 @@
         <property name="show_sql">true</property>
  
         <mapping class="com.myliblary.model.User" />
- 
+ 		<mapping class="com.myliblary.model.Book" />
+ 		
     </session-factory>
  
 </hibernate-configuration>

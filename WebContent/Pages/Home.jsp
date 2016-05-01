@@ -7,9 +7,9 @@
 
 <head>
   <!-- SCROLLS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="<c:url value="/css/bootstrap.css"/>"/>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-  <link href="/css/custom.css" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" rel="stylesheet" type="text/css" />
   <link type="text/css" rel="stylesheet" href="<c:url value="/css/custom.css" />" />
    
 
@@ -27,7 +27,9 @@
   <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <div class="navbar-brand"> Probably the most dynamic library in the universe!</div>
+        <div class="navbar-brand"> 
+        <img src="img/logo.png" alt="logo" height="20" width="75" >
+        Probably the most dynamic library in the universe!</div>
       </div>
 
       <ul class="nav navbar-nav navbar-right">

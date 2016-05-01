@@ -27,7 +27,6 @@ public class UserDAOImpl implements UserDAO {
         try {
             System.out.println("IN LIST");
             items = (List<User>)session.createQuery("from User").list();
- 
         } catch (HibernateException e) {
             e.printStackTrace();
             session.getTransaction().rollback();

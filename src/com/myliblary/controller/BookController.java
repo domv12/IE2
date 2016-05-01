@@ -3,16 +3,15 @@ package com.myliblary.controller;
 import java.util.List;
 
 
-
-
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.myliblary.dao.BookDAO;
@@ -23,14 +22,16 @@ import com.myliblary.model.Book;
 public class BookController {
 
   	 @Autowired
-	    private BookDAO bookDao; 
+	 private BookDAO bookDao; 
 	 
-	 @RequestMapping(value="/booklist")
-     public ModelAndView list() {
+  	 @RequestMapping(value="/bookList", produces=MediaType.APPLICATION_JSON_VALUE,consumes=MediaType.ALL_VALUE, method = RequestMethod.GET
+   		  )
+     @ResponseBody
+     public List<Book> list() {
          List<Book> bookList = bookDao.list();
-         ModelAndView model = new ModelAndView("BookList");
-         model.addObject("bookList", bookList);
-         return model;
+         //ModelAndView model = new ModelAndView("BookList");
+         //model.addObject("bookList", bookList);
+         return bookList;
      }
 /*
    @RequestMapping(value="/addBook")
