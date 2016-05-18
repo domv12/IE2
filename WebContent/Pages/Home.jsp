@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
   <link href="css/custom.css" rel="stylesheet" type="text/css" />
   <link type="text/css" rel="stylesheet" href="<c:url value="/css/custom.css" />" />
+  <link type="text/css" rel="stylesheet" href="<c:url value="/css/contact.css" />" />
+  <link type="text/css" rel="stylesheet" href="<c:url value="/css/catalog.css" />" />
    
 
   <!-- SPELLS -->
@@ -35,7 +37,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="#catalog"><i class="fa fa-book"></i> Catalog</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+        <li><a href="#about"><i class="fa fa-shield"></i> Account</a></li>
         <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
       </ul>
     </div>

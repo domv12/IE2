@@ -1,7 +1,26 @@
 <div class="jumbotron text-center">
 	<div class="test">
-	<h1>Home</h1>
-	<br><br><br>
+<div class="container">
+
+		<div ng-show="loginErrorMessage"class="alert alert-error">
+			{{ loginErrorMessage }}
+		</div>
+
+		<form action="j_spring_security_check" method="POST" class="form-signin">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<input name="j_username" type="text" class="input-block-level" placeholder="Username" required=""> 
+			<input name="j_password" type="password" type="password" class="input-block-level" placeholder="Password" required="">
+
+			<!-- TODO: Figure out remember me with Spring Security  -->
+			<!-- <label class="checkbox">
+          			<input type="checkbox" value="remember-me"> Remember me
+        		 </label> -->
+
+			<button class="btn btn-large btn-primary" type="submit">Sign in</button>
+		</form>
+
+	</div>
+
 	</div>
 	<div id="bg">
 		<img src="img/test.gif" alt="HTML5_Icon" class="home" >

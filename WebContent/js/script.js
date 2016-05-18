@@ -53,6 +53,36 @@
 		
 	});
 
-	scotchApp.controller('contactController', function($scope) {
-		$scope.message = 'Contact us! This is only begin!';
+	scotchApp.controller('contactController', function($scope, $http) {
+
+		var name;
+		var email;
+		var comment;
+		
+		 $scope.myTxt = "1";
+		 $scope.myFunc = function () {
+			
+			  name = $scope.name;
+			  email = $scope.email;
+			  comment = $scope.comment;
+			  
+			  
+			  var message = {name: name, email: email, comment: comment};
+			  $http.post('/LiblaryProject/send', message)
+			    .success(function() {
+			      console.log("msg sent");
+			    })
+			    .error(function() {
+			      console.log("msg failed");
+			    });
+			  
+			 $scope.myTxt = email;
+		  }
+		 
 	});
+	
+	
+	
+	
+	
+	

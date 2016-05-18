@@ -1,0 +1,28 @@
+.catalogList
+{
+	padding-top:30px;
+	float: left;
+	width: 33%;
+	
+}
+.info
+{
+	margin:0 auto;	
+	width:33%;
+	visibility: hidden;	
+	position: absolute;
+
+
+}
+
+.catalogList:hover .info
+{
+	
+	
+}
+
+.catalogList:hover
+{
+		background-color: rgba(72,72,72,0.4);
+	cursor: pointer;
+}

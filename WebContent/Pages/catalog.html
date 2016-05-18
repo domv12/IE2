@@ -1,10 +1,36 @@
 <div class="jumbotron text-center">
-	<h1>Catalog Page</h1>
-	<ul>
-    <li ng-repeat="x in myData">
-    {{ x.title + ', ' + x.author }}
-    </li>
-    </ul>
+<div class="test">
+	<h1>Catalog</h1>
+	
+    <div class="catalogList" ng-repeat="x in myData">
 
+	<div class="info">
+		<div> 
+    	{{ x.title }}
+   		</div>
+		 <div> 
+		 {{ x.author }}
+		 </div>
+		 <div>
+		 {{ x.publishingHouse }}
+		 </div>
+		 <div>
+		 <button class="btn btn-large btn-primary" type="submit">Take it!</button>
+		 </div>
+	</div>
 
+	<div class="catalogImg">	
+   	<img src="img/catalog/{{ x.bookId}}.jpg" alt="HTML5_Icon" width="150" height="230">
+	</div>
+	<div class ="title"> 
+    {{ x.title }}
+    </div>
+	</div>
+	
+	<div class="clear"></div>	
+
+</div>
+	<div id="bg">
+		<img src="img/t2.jpg" alt="HTML5_Icon" class="home" >
+	</div>
 </div>
